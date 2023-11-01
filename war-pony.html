@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>War Pony</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-dark text-light">
+    <header>
+      <nav class="navbar navbar-expand-sm bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Pony Ride Events</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="about.html"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="war-pony.html">War Ponies</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Fairy Tale Ponies</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Super Hero Ponies</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <input
+        oninput="handleSearch(event)"
+        class="form-control"
+        type="text"
+        placeholder="Search"
+        aria-label="Search"
+      />
+      <ul id="search-dropdown" class="dropdown-menu w-100">
+        <li><a class="dropdown-item" href="#">EXAMPLE Pony</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <section class="container p-4">
+        <h2 class="text-center">Event starts in:</h2>
+        <div class="d-flex text-center justify-content-center">
+          <div class="countdown">
+            <p id="days"></p>
+            <p>days</p>
+          </div>
+          <div class="countdown">
+            <p id="hours"></p>
+            <p>hours</p>
+          </div>
+          <div class="countdown">
+            <p id="minutes"></p>
+            <p>minutes</p>
+          </div>
+          <div class="countdown">
+            <p id="seconds"></p>
+            <p>seconds</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="container border">
+        <h1 class="border-bottom">War Ponies</h1>
+
+        <p>Event Date: <span id="event-date"></span></p>
+        
+        <p>Event Time: <span id="event-time"></span></p>
+
+        <img class="w-100" src="img/war-pony.jpg" alt="a pony ready for war" />
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+          officiis, libero nesciunt officia earum pariatur iste eveniet maiores,
+          quasi accusantium nam alias tenetur aliquam iusto error dolorem labore
+          adipisci mollitia! Est veritatis ea voluptates soluta, dolorem facere
+          inventore a provident ipsa, eius omnis nesciunt quaerat! Iusto
+          provident, modi exercitationem laudantium ipsam omnis, est voluptate
+          ea tempore explicabo libero, commodi ullam. Totam, labore dolorum.
+          Placeat officiis incidunt corporis, quasi illum doloremque? Eius
+          dolores et tempore animi hic odio debitis fugit numquam impedit,
+          consectetur, mollitia libero? Reiciendis dolores odio ullam quasi hic!
+          Repudiandae provident, hic dignissimos laborum vel necessitatibus qui
+          molestiae tempore voluptate natus blanditiis accusantium suscipit,
+          corrupti eligendi explicabo excepturi reiciendis ea sapiente quaerat
+          accusamus obcaecati. Quos vero at odit aliquid.
+        </p>
+      </section>
+    </main>
+    <footer></footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/app.js"></script>
+
+    <script>handleWarPonyPageLoad()</script>
+  </body>
+</html>
